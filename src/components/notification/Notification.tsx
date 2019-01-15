@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
+import "./Notification.css";
 
 type NotificationProps = {
     text: string;
@@ -6,7 +7,7 @@ type NotificationProps = {
 
 export const Notification: React.FunctionComponent<NotificationProps> = ({ text }) => {
     return (
-        <div>
+        <div className="Notification">
             { text }
         </div>
     )
