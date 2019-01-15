@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import * as Type from "../../types";
 import { Notification } from "../../components/notification";
 import { selectCategories } from "../../state/category";
-
+import "./Categories.css";
 
 class Categories extends Component<MapStateToProps> {
     public render() {

@@ -16,6 +16,7 @@ type AddCategoryAction = {
     payload: {
         id: number;
         name: string;
+        active: boolean;
     };
 };
 
@@ -54,7 +55,7 @@ const addCategoryReducer: Reducer<CategoryType[], AddCategoryAction> = (state, {
     [...state].concat(payload);
 
 const editCategoryReducer: Reducer<CategoryType[], EditCategoryAction> = (state, { payload }) =>
-    [...state.map(category => category.id === payload.id ? payload : category)];
+    [...state.map(category => category.id === payload.id ? {...category, ...payload} : category)];
 
 const deleteCategoryReducer: Reducer<CategoryType[], DeleteCategoryAction> = (state, { payload }) =>
     [...state.filter(category => category.id !== payload)];

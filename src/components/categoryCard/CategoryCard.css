@@ -1,0 +1,25 @@
+.CategoryCard {
+    width: 100%;
+    position: relative;
+    padding: 7px 20px;
+}
+
+.CategoryCard__active {
+    background-color: #e8ecf1;
+    border-radius: 4px;
+}
+
+.CategoryCard-name {
+    color: #6c7a89;
+    font-size: 15px;
+    text-align: left;
+}
+
+.CategoryCard-name:hover {
+    color: #67809f;
+}
+
+.CategoryCard__active .CategoryCard-name {
+    color: #22a7f0;
+    font-weight: 600;
+}
