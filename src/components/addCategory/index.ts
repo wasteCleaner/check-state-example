@@ -1,0 +1,1 @@
+export { AddCategoryConnected } from "./AddCategory";

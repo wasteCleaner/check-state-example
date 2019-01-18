@@ -6,15 +6,17 @@ import "./CategoryCard.css";
 type CategoryCardProps = {
     category: Type.Category;
     onClick: () => void;
-    delete: () => void;
+    onDelete: () => void;
 }
 
-export const CategoryCard: React.FunctionComponent<CategoryCardProps> = ({ category }) => {
+export const CategoryCard: React.FunctionComponent<CategoryCardProps> = ({ category, onDelete, onClick }) => {
     return (
         <div className={classnames("CategoryCard", category.active && "CategoryCard__active")}>
-            <div className="CategoryCard-name">
+            <div className={classnames("CategoryCard-indicator")} onClick={onClick} />
+            <div className="CategoryCard-name" onClick={onClick}>
                 { category.name }
             </div>
+            <div className="CategoryCard-delete" onClick={onDelete} />
         </div>
     );
 };
