@@ -1,25 +1,58 @@
 .CategoryCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 100%;
     position: relative;
-    padding: 7px 20px;
+    padding: 7px 40px 7px 20px;
 }
 
 .CategoryCard__active {
-    background-color: #e8ecf1;
+    background-color: rgba(232, 236, 241, 0.42);
     border-radius: 4px;
 }
 
 .CategoryCard-name {
+    flex-shrink: 1;
     color: #6c7a89;
     font-size: 15px;
     text-align: left;
+    padding-left: 10px;
+    cursor: pointer;
 }
 
 .CategoryCard-name:hover {
-    color: #67809f;
+    color: #22a7f0;
+}
+
+.CategoryCard-indicator {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    border: 2px solid #22a7f0;
+    flex-shrink: 0;
+    cursor: pointer;
 }
 
 .CategoryCard__active .CategoryCard-name {
     color: #22a7f0;
     font-weight: 600;
+}
+
+.CategoryCard__active .CategoryCard-indicator {
+    background-color: #22a7f0;
+}
+
+.CategoryCard-delete {
+    display: block;
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    width: 13px;
+    height: 13px;
+    background-image: url("./Delete.svg");
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
 }
