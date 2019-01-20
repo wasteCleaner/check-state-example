@@ -6,7 +6,6 @@ export {
 } from "./actions";
 export {
     selectCategories,
-    selectCategoryById,
     selectIsCategoryActive,
     selectActiveCategory,
     selectActiveCategoryId,
