@@ -1,0 +1,1268 @@
+[
+  {
+    "action": {
+      "type": "category/addCategory",
+      "payload": {
+        "id": 1,
+        "name": "Test category",
+        "active": false
+      }
+    },
+    "state": {
+      "category": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": false
+        }
+      ],
+      "task": [],
+      "popup": {
+        "isOpen": false
+      }
+    },
+    "selectorsResult": {
+      "selectCategories": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": false
+        }
+      ],
+      "selectIsCategoryActive": false,
+      "selectPopup": {
+        "isOpen": false
+      },
+      "selectIsPopupOpen": false,
+      "selectTasks": [],
+      "selectActiveTasks": [],
+      "selectActiveDoneTasks": [],
+      "selectActiveInProgressTasks": []
+    }
+  },
+  {
+    "action": {
+      "type": "category/selectCategory",
+      "payload": 1
+    },
+    "state": {
+      "category": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        }
+      ],
+      "task": [],
+      "popup": {
+        "isOpen": false
+      }
+    },
+    "selectorsResult": {
+      "selectCategories": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        }
+      ],
+      "selectActiveCategory": {
+        "id": 1,
+        "name": "Test category",
+        "active": true
+      },
+      "selectIsCategoryActive": true,
+      "selectActiveCategoryId": 1,
+      "selectPopup": {
+        "isOpen": false
+      },
+      "selectIsPopupOpen": false,
+      "selectTasks": [],
+      "selectActiveTasks": [],
+      "selectActiveDoneTasks": [],
+      "selectActiveInProgressTasks": []
+    }
+  },
+  {
+    "action": {
+      "type": "popup/OpenPopup",
+      "payload": "AddTask"
+    },
+    "state": {
+      "category": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        }
+      ],
+      "task": [],
+      "popup": {
+        "isOpen": true,
+        "type": "AddTask"
+      }
+    },
+    "selectorsResult": {
+      "selectCategories": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        }
+      ],
+      "selectActiveCategory": {
+        "id": 1,
+        "name": "Test category",
+        "active": true
+      },
+      "selectIsCategoryActive": true,
+      "selectActiveCategoryId": 1,
+      "selectPopup": {
+        "isOpen": true,
+        "type": "AddTask"
+      },
+      "selectPopupType": "AddTask",
+      "selectIsPopupOpen": true,
+      "selectTasks": [],
+      "selectActiveTasks": [],
+      "selectActiveDoneTasks": [],
+      "selectActiveInProgressTasks": []
+    }
+  },
+  {
+    "action": {
+      "type": "popup/ClosePopup"
+    },
+    "state": {
+      "category": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        }
+      ],
+      "task": [],
+      "popup": {
+        "isOpen": false
+      }
+    },
+    "selectorsResult": {
+      "selectCategories": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        }
+      ],
+      "selectActiveCategory": {
+        "id": 1,
+        "name": "Test category",
+        "active": true
+      },
+      "selectIsCategoryActive": true,
+      "selectActiveCategoryId": 1,
+      "selectPopup": {
+        "isOpen": false
+      },
+      "selectIsPopupOpen": false,
+      "selectTasks": [],
+      "selectActiveTasks": [],
+      "selectActiveDoneTasks": [],
+      "selectActiveInProgressTasks": []
+    }
+  },
+  {
+    "action": {
+      "type": "popup/OpenPopup",
+      "payload": "AddTask"
+    },
+    "state": {
+      "category": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        }
+      ],
+      "task": [],
+      "popup": {
+        "isOpen": true,
+        "type": "AddTask"
+      }
+    },
+    "selectorsResult": {
+      "selectCategories": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        }
+      ],
+      "selectActiveCategory": {
+        "id": 1,
+        "name": "Test category",
+        "active": true
+      },
+      "selectIsCategoryActive": true,
+      "selectActiveCategoryId": 1,
+      "selectPopup": {
+        "isOpen": true,
+        "type": "AddTask"
+      },
+      "selectPopupType": "AddTask",
+      "selectIsPopupOpen": true,
+      "selectTasks": [],
+      "selectActiveTasks": [],
+      "selectActiveDoneTasks": [],
+      "selectActiveInProgressTasks": []
+    }
+  },
+  {
+    "action": {
+      "type": "task/AddTask",
+      "payload": {
+        "id": 1,
+        "categoryId": 1,
+        "name": "New task",
+        "estimate": "2h",
+        "isDone": false
+      }
+    },
+    "state": {
+      "category": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        }
+      ],
+      "task": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        }
+      ],
+      "popup": {
+        "isOpen": true,
+        "type": "AddTask"
+      }
+    },
+    "selectorsResult": {
+      "selectCategories": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        }
+      ],
+      "selectActiveCategory": {
+        "id": 1,
+        "name": "Test category",
+        "active": true
+      },
+      "selectIsCategoryActive": true,
+      "selectActiveCategoryId": 1,
+      "selectPopup": {
+        "isOpen": true,
+        "type": "AddTask"
+      },
+      "selectPopupType": "AddTask",
+      "selectIsPopupOpen": true,
+      "selectTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        }
+      ],
+      "selectActiveTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        }
+      ],
+      "selectActiveDoneTasks": [],
+      "selectActiveInProgressTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        }
+      ]
+    }
+  },
+  {
+    "action": {
+      "type": "popup/ClosePopup"
+    },
+    "state": {
+      "category": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        }
+      ],
+      "task": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        }
+      ],
+      "popup": {
+        "isOpen": false
+      }
+    },
+    "selectorsResult": {
+      "selectCategories": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        }
+      ],
+      "selectActiveCategory": {
+        "id": 1,
+        "name": "Test category",
+        "active": true
+      },
+      "selectIsCategoryActive": true,
+      "selectActiveCategoryId": 1,
+      "selectPopup": {
+        "isOpen": false
+      },
+      "selectIsPopupOpen": false,
+      "selectTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        }
+      ],
+      "selectActiveTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        }
+      ],
+      "selectActiveDoneTasks": [],
+      "selectActiveInProgressTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        }
+      ]
+    }
+  },
+  {
+    "action": {
+      "type": "popup/OpenPopup",
+      "payload": "AddTask"
+    },
+    "state": {
+      "category": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        }
+      ],
+      "task": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        }
+      ],
+      "popup": {
+        "isOpen": true,
+        "type": "AddTask"
+      }
+    },
+    "selectorsResult": {
+      "selectCategories": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        }
+      ],
+      "selectActiveCategory": {
+        "id": 1,
+        "name": "Test category",
+        "active": true
+      },
+      "selectIsCategoryActive": true,
+      "selectActiveCategoryId": 1,
+      "selectPopup": {
+        "isOpen": true,
+        "type": "AddTask"
+      },
+      "selectPopupType": "AddTask",
+      "selectIsPopupOpen": true,
+      "selectTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        }
+      ],
+      "selectActiveTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        }
+      ],
+      "selectActiveDoneTasks": [],
+      "selectActiveInProgressTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        }
+      ]
+    }
+  },
+  {
+    "action": {
+      "type": "task/AddTask",
+      "payload": {
+        "id": 2,
+        "categoryId": 1,
+        "name": "Second task",
+        "estimate": "1d",
+        "isDone": false
+      }
+    },
+    "state": {
+      "category": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        }
+      ],
+      "task": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ],
+      "popup": {
+        "isOpen": true,
+        "type": "AddTask"
+      }
+    },
+    "selectorsResult": {
+      "selectCategories": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        }
+      ],
+      "selectActiveCategory": {
+        "id": 1,
+        "name": "Test category",
+        "active": true
+      },
+      "selectIsCategoryActive": true,
+      "selectActiveCategoryId": 1,
+      "selectPopup": {
+        "isOpen": true,
+        "type": "AddTask"
+      },
+      "selectPopupType": "AddTask",
+      "selectIsPopupOpen": true,
+      "selectTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ],
+      "selectActiveTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ],
+      "selectActiveDoneTasks": [],
+      "selectActiveInProgressTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ]
+    }
+  },
+  {
+    "action": {
+      "type": "popup/ClosePopup"
+    },
+    "state": {
+      "category": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        }
+      ],
+      "task": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ],
+      "popup": {
+        "isOpen": false
+      }
+    },
+    "selectorsResult": {
+      "selectCategories": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        }
+      ],
+      "selectActiveCategory": {
+        "id": 1,
+        "name": "Test category",
+        "active": true
+      },
+      "selectIsCategoryActive": true,
+      "selectActiveCategoryId": 1,
+      "selectPopup": {
+        "isOpen": false
+      },
+      "selectIsPopupOpen": false,
+      "selectTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ],
+      "selectActiveTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ],
+      "selectActiveDoneTasks": [],
+      "selectActiveInProgressTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ]
+    }
+  },
+  {
+    "action": {
+      "type": "task/FinishTask",
+      "payload": 2
+    },
+    "state": {
+      "category": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        }
+      ],
+      "task": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": true
+        }
+      ],
+      "popup": {
+        "isOpen": false
+      }
+    },
+    "selectorsResult": {
+      "selectCategories": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        }
+      ],
+      "selectActiveCategory": {
+        "id": 1,
+        "name": "Test category",
+        "active": true
+      },
+      "selectIsCategoryActive": true,
+      "selectActiveCategoryId": 1,
+      "selectPopup": {
+        "isOpen": false
+      },
+      "selectIsPopupOpen": false,
+      "selectTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": true
+        }
+      ],
+      "selectActiveTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": true
+        }
+      ],
+      "selectActiveDoneTasks": [
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": true
+        }
+      ],
+      "selectActiveInProgressTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        }
+      ]
+    }
+  },
+  {
+    "action": {
+      "type": "task/RestoreTask",
+      "payload": 2
+    },
+    "state": {
+      "category": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        }
+      ],
+      "task": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ],
+      "popup": {
+        "isOpen": false
+      }
+    },
+    "selectorsResult": {
+      "selectCategories": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        }
+      ],
+      "selectActiveCategory": {
+        "id": 1,
+        "name": "Test category",
+        "active": true
+      },
+      "selectIsCategoryActive": true,
+      "selectActiveCategoryId": 1,
+      "selectPopup": {
+        "isOpen": false
+      },
+      "selectIsPopupOpen": false,
+      "selectTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ],
+      "selectActiveTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ],
+      "selectActiveDoneTasks": [],
+      "selectActiveInProgressTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ]
+    }
+  },
+  {
+    "action": {
+      "type": "category/addCategory",
+      "payload": {
+        "id": 2,
+        "name": "Next category",
+        "active": false
+      }
+    },
+    "state": {
+      "category": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        },
+        {
+          "id": 2,
+          "name": "Next category",
+          "active": false
+        }
+      ],
+      "task": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ],
+      "popup": {
+        "isOpen": false
+      }
+    },
+    "selectorsResult": {
+      "selectCategories": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": true
+        },
+        {
+          "id": 2,
+          "name": "Next category",
+          "active": false
+        }
+      ],
+      "selectActiveCategory": {
+        "id": 1,
+        "name": "Test category",
+        "active": true
+      },
+      "selectIsCategoryActive": true,
+      "selectActiveCategoryId": 1,
+      "selectPopup": {
+        "isOpen": false
+      },
+      "selectIsPopupOpen": false,
+      "selectTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ],
+      "selectActiveTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ],
+      "selectActiveDoneTasks": [],
+      "selectActiveInProgressTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ]
+    }
+  },
+  {
+    "action": {
+      "type": "category/selectCategory",
+      "payload": 2
+    },
+    "state": {
+      "category": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": false
+        },
+        {
+          "id": 2,
+          "name": "Next category",
+          "active": true
+        }
+      ],
+      "task": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ],
+      "popup": {
+        "isOpen": false
+      }
+    },
+    "selectorsResult": {
+      "selectCategories": [
+        {
+          "id": 1,
+          "name": "Test category",
+          "active": false
+        },
+        {
+          "id": 2,
+          "name": "Next category",
+          "active": true
+        }
+      ],
+      "selectActiveCategory": {
+        "id": 2,
+        "name": "Next category",
+        "active": true
+      },
+      "selectIsCategoryActive": true,
+      "selectActiveCategoryId": 2,
+      "selectPopup": {
+        "isOpen": false
+      },
+      "selectIsPopupOpen": false,
+      "selectTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ],
+      "selectActiveTasks": [],
+      "selectActiveDoneTasks": [],
+      "selectActiveInProgressTasks": []
+    }
+  },
+  {
+    "action": {
+      "type": "category/deleteCategory",
+      "payload": 1
+    },
+    "state": {
+      "category": [
+        {
+          "id": 2,
+          "name": "Next category",
+          "active": true
+        }
+      ],
+      "task": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ],
+      "popup": {
+        "isOpen": false
+      }
+    },
+    "selectorsResult": {
+      "selectCategories": [
+        {
+          "id": 2,
+          "name": "Next category",
+          "active": true
+        }
+      ],
+      "selectActiveCategory": {
+        "id": 2,
+        "name": "Next category",
+        "active": true
+      },
+      "selectIsCategoryActive": true,
+      "selectActiveCategoryId": 2,
+      "selectPopup": {
+        "isOpen": false
+      },
+      "selectIsPopupOpen": false,
+      "selectTasks": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "New task",
+          "estimate": "2h",
+          "isDone": false
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ],
+      "selectActiveTasks": [],
+      "selectActiveDoneTasks": [],
+      "selectActiveInProgressTasks": []
+    }
+  },
+  {
+    "action": {
+      "type": "task/RemoveTask",
+      "payload": 1
+    },
+    "state": {
+      "category": [
+        {
+          "id": 2,
+          "name": "Next category",
+          "active": true
+        }
+      ],
+      "task": [
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ],
+      "popup": {
+        "isOpen": false
+      }
+    },
+    "selectorsResult": {
+      "selectCategories": [
+        {
+          "id": 2,
+          "name": "Next category",
+          "active": true
+        }
+      ],
+      "selectActiveCategory": {
+        "id": 2,
+        "name": "Next category",
+        "active": true
+      },
+      "selectIsCategoryActive": true,
+      "selectActiveCategoryId": 2,
+      "selectPopup": {
+        "isOpen": false
+      },
+      "selectIsPopupOpen": false,
+      "selectTasks": [
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ],
+      "selectActiveTasks": [],
+      "selectActiveDoneTasks": [],
+      "selectActiveInProgressTasks": []
+    }
+  },
+  {
+    "action": {
+      "type": "task/RemoveTask",
+      "payload": 1
+    },
+    "state": {
+      "category": [
+        {
+          "id": 2,
+          "name": "Next category",
+          "active": true
+        }
+      ],
+      "task": [
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ],
+      "popup": {
+        "isOpen": false
+      }
+    },
+    "selectorsResult": {
+      "selectCategories": [
+        {
+          "id": 2,
+          "name": "Next category",
+          "active": true
+        }
+      ],
+      "selectActiveCategory": {
+        "id": 2,
+        "name": "Next category",
+        "active": true
+      },
+      "selectIsCategoryActive": true,
+      "selectActiveCategoryId": 2,
+      "selectPopup": {
+        "isOpen": false
+      },
+      "selectIsPopupOpen": false,
+      "selectTasks": [
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Second task",
+          "estimate": "1d",
+          "isDone": false
+        }
+      ],
+      "selectActiveTasks": [],
+      "selectActiveDoneTasks": [],
+      "selectActiveInProgressTasks": []
+    }
+  }
+]
