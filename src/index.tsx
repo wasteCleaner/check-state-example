@@ -20,14 +20,14 @@ type EnhancedWindow = Window & { // expend base window type (only for strict typ
     __checkStoreExtension__: (options: Object) => Middleware;
 };
 
-const checkStoreMiddleware = (options = {}): Middleware<Type.State, Action> => {
+const checkStateMiddleware = (options = {}): Middleware<Type.State, Action> => {
     return window && (window as EnhancedWindow)["__checkStoreExtension__"] ?
         (window as EnhancedWindow)["__checkStoreExtension__"](options) :
         store => next => action => next(action);
 };
 
 // Code example for JS implementation (without types)
-// const checkStoreMiddleware = (options = {}) => {
+// const checkStateMiddleware = (options = {}) => {
 //     return window && window["__checkStoreExtension__"] ? window["__checkStoreExtension__"](options) :
 //         store => next => action => next(action);
 // };
@@ -35,7 +35,7 @@ const checkStoreMiddleware = (options = {}): Middleware<Type.State, Action> => {
 const store = createStore(
     reducers,
     compose(applyMiddleware(
-        checkStoreMiddleware(selectors), // you can add other middlewares here (thunk for example)
+        checkStateMiddleware(selectors), // you can add other middlewares here (thunk for example)
     )),
 );
 
