@@ -1,1 +1,1 @@
-export { CategoriesConnected } from "./Categories";
+export { Categories } from "./Categories";

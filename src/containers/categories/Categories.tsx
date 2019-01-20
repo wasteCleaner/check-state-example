@@ -8,17 +8,27 @@ import {
     deleteCategory,
     selectCategory,
 } from "../../state/category";
+import {
+    removeTask,
+    selectTasks,
+} from "../../state/task";
 import { AddCategoryConnected } from "../../components/addCategory";
 import "./Categories.css";
 import { CategoryCard } from "../../components/categoryCard";
 
-class Categories extends Component<MapStateToProps & MapDispatchToProps> {
+class CategoriesContainer extends Component<MapStateToProps & MapDispatchToProps> {
     public onCategorySelect = (id: number) => {
         this.props.selectCategory(id);
     };
 
     public deleteCategory = (id: number) => {
-        this.props.deleteCategory(id);
+        const { deleteCategory, removeTask, tasks } = this.props;
+        deleteCategory(id);
+        tasks.forEach(task => {
+            if (task.categoryId === id) {
+                removeTask(id);
+            }
+        });
     };
 
     public render() {
@@ -45,21 +55,25 @@ class Categories extends Component<MapStateToProps & MapDispatchToProps> {
 }
 
 type MapStateToProps = {
-    categories:Type.Category[];
+    categories: Type.Category[];
+    tasks: Type.Task[];
 };
 
 type MapDispatchToProps = {
     deleteCategory: (id: number) => void;
     selectCategory: (id: number) => void;
+    removeTask: (id: number) => void;
 }
 
 const mapStateToProps = (state: Type.State) => ({
     categories: selectCategories(state),
+    tasks: selectTasks(state),
 });
 
 const mapDispatchToProps = (dispatch: Type.DispatchType) => ({
     deleteCategory: (id: number) => dispatch(deleteCategory(id)),
     selectCategory: (id: number) => dispatch(selectCategory(id)),
+    removeTask: (id: number) => dispatch(removeTask(id)),
 });
 
-export const CategoriesConnected = connect(mapStateToProps, mapDispatchToProps)(Categories);
+export const Categories = connect(mapStateToProps, mapDispatchToProps)(CategoriesContainer);
