@@ -3,9 +3,11 @@ import { connect } from "react-redux";
 import * as Type from "../../types";
 import { selectIsCategoryActive } from "../../state/category";
 import { openPopup } from "../../state/popup";
-import { CategoriesConnected } from "../categories";
+import { Notification } from "../../components/notification";
+import { Categories } from "../categories";
+import { Tasks } from "../tasks";
 import { Button } from "../../components/button";
-import { Popup } from "../popup"
+import { Popup } from "../popup";
 import "./Layout.css";
 
 
@@ -18,7 +20,11 @@ class LayoutComponent extends Component<MapStateToProps & MapDispatchToProps> {
         const { isCategoryActive } = this.props;
         return (
             <div className="Layout">
-                <CategoriesConnected />
+                <Categories />
+                { isCategoryActive ?
+                    <Tasks /> :
+                    <Notification text="Category is not selected" />
+                }
                 { isCategoryActive && <Button onClick={this.addTask} className="Layout-addTask" /> }
                 <Popup />
             </div>

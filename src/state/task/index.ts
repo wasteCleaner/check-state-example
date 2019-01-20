@@ -1,6 +1,9 @@
 export {
     task,
     addTask,
+    finishTask,
+    restoreTask,
+    removeTask,
 } from "./actions";
 export {
     selectTasks,

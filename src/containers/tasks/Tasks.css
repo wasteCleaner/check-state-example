@@ -2,5 +2,61 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 15px;
+}
+
+.Tasks-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+}
+
+.Tasks-path {
+    font-size: 15px;
+    color: #6c7a89;
+}
+
+.Tasks-categoryName {
+    font-size: 40px;
+    color: #2c3e50;
+    margin-top: 5px;
+}
+
+.TasksTabs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px 30px 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.TasksTabs-tab {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 10px 0;
+    font-size: 16px;
+    color: #6c7a89;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.TasksTabs-tab span {
+    font-size: 11px;
+    padding: 2px 4px;
+    background-color: rgba(34, 167, 240, 0.7);
+    border-radius: 33%;
+    margin-right: 5px;
+    color: #ffffff;
+}
+
+.TasksTabs-tab.TasksTabs-tab__active {
+    color: #2c3e50;
+    padding: 0 0 7px 0;
+    border-bottom: 3px solid #22a7f0;
+}
+
+.TasksList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }

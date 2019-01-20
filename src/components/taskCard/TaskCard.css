@@ -1,0 +1,47 @@
+.TaskCard {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 15px 30px;
+    transition: background-color 0.4s;
+}
+
+.TaskCard:hover {
+    background-color: rgba(238, 238, 238, 0.4);
+}
+
+.TaskCard-id {
+    font-size: 16px;
+    color: #22a7f0;
+    margin-right: 15px;
+}
+
+.TaskCard-name {
+    font-size: 16px;
+    color: #2c3e50;
+    margin-right: 15px;
+}
+
+.TaskCard-estimate {
+    font-size: 11px;
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: rgba(34, 167, 240, 0.7);
+}
+
+.TaskCard-action {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    line-height: 16px;
+    font-size: 14px;
+    color: #e08283;
+    opacity: 0;
+    transition: opacity 0.4s;
+    cursor: pointer;
+}
+
+.TaskCard:hover .TaskCard-action {
+    opacity: 1;
+}
