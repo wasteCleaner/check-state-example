@@ -3,7 +3,7 @@ import {
     Reducer,
 } from "../../types";
 
-const initial: CategoryType[] = [];
+const initial: Readonly<CategoryType[]> = [];
 
 enum ActionTypes {
     AddCategory = "category/addCategory",

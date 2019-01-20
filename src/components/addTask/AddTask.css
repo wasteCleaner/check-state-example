@@ -1,28 +1,40 @@
-.AddCategory {
+.AddTask {
     display: flex;
-    width: 100%;
     flex-direction: row;
-    border-top: 1px solid #e8e8e8;
-    padding: 30px 0;
-    margin-top: 30px;
+    width: 100%;
+    justify-content: flex-start;
 }
 
-.AddCategory-name {
+.AddTask-name {
     display: block;
+    width: 100%;
+    flex-shrink: 1;
+    margin-right: 10px;
     padding: 7px 15px;
     font-size: 16px;
     color: #6c7a89;
-    width: 100%;
-    flex-shrink: 1;
     border-radius: 3px;
     border: 1px solid #e8e8e8;
 }
 
-.AddCategory-name:focus {
+.AddTask-name:focus,
+.AddTask-estimate:focus {
     outline: none;
 }
 
-.AddCategory-addButton {
+.AddTask-estimate {
+    display: block;
+    width: 95px;
+    flex-shrink: 0;
+    margin-right: 10px;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #6c7a89;
+    border-radius: 3px;
+    border: 1px solid #e8e8e8;
+}
+
+.AddTask-add {
     display: block;
     padding: 8px 10px;
     font-size: 16px;
@@ -30,12 +42,11 @@
     color: #ffffff;
     background-color: #22a7f0;
     border-radius: 3px;
-    margin-left: 10px;
     cursor: pointer;
     opacity: 1;
     transition: opacity 0.3s;
 }
 
-.AddCategory-addButton__disable {
+.AddTask-add__disable {
     opacity: 0.7;
 }
