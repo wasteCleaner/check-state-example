@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { trim } from "lodash";
+import classnames from "classnames";
 import { connect } from "react-redux";
 
 import * as Type from "../../types";
@@ -29,13 +31,15 @@ class AddCategory extends Component<MapStateToProps & MapDispatchToProps, OwnPro
     };
 
     public addCategory = () => {
-        this.props.addCategory({
-            id: this.getNextId(),
-            name: this.state.name,
-            active: false,
-        });
+        if (trim(this.state.name)) {
+            this.props.addCategory({
+                id: this.getNextId(),
+                name: this.state.name,
+                active: false,
+            });
 
-        this.clearName();
+            this.clearName();
+        }
     };
 
     public getNextId = (): number => {
@@ -47,6 +51,12 @@ class AddCategory extends Component<MapStateToProps & MapDispatchToProps, OwnPro
         return categories[categories.length - 1].id + 1;
     };
 
+    public onKeyPressHandler = (event: React.KeyboardEvent) => {
+        if (event.key === "Enter") {
+            this.addCategory();
+        }
+    };
+
     public render() {
         return (
             <div className="AddCategory">
@@ -56,8 +66,17 @@ class AddCategory extends Component<MapStateToProps & MapDispatchToProps, OwnPro
                     placeholder="New category"
                     value={this.state.name}
                     onChange={this.changeName}
+                    onKeyPress={this.onKeyPressHandler}
                 />
-                <div className="AddCategory-addButton" onClick={this.addCategory}>Add</div>
+                <div
+                    className={classnames(
+                        "AddCategory-addButton",
+                        !trim(this.state.name) && "AddCategory-addButton__disable",
+                        )}
+                    onClick={this.addCategory}
+                >
+                    Add
+                </div>
             </div>
         );
     }

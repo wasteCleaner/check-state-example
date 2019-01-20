@@ -7,4 +7,7 @@ export {
 export {
     selectCategories,
     selectCategoryById,
+    selectIsCategoryActive,
+    selectActiveCategory,
+    selectActiveCategoryId,
 } from "./selectors";
